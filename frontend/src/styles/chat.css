@@ -1,0 +1,348 @@
+/* =====================================
+   GLOBAL
+===================================== */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  /* darker background */
+
+  background: linear-gradient(
+    135deg,
+    #0f172a,   /* very dark navy */
+    #1e3a8a,   /* dark blue */
+    #2563eb    /* medium blue */
+  );
+
+  min-height: 100vh;
+}
+
+/* =====================================
+   LOGIN PAGE
+===================================== */
+
+.login-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+/* outer login box */
+
+.login-outer-box{
+  width:650px;
+  padding:30px;
+
+  border:3px solid black;
+  border-radius:10px;
+
+  background:linear-gradient(135deg,#2563eb,#1e40af);
+
+  box-shadow:0px 6px 20px rgba(0,0,0,0.3);
+}
+
+/* title */
+
+.login-outer-box h2{
+  text-align:center;
+  color:white;
+  margin-bottom:25px;
+}
+
+/* place login options side by side */
+
+.login-sections{
+  display:flex;
+  gap:20px;
+}
+
+/* inner boxes */
+
+.login-box{
+  flex:1;
+
+  background:#eff6ff;
+
+  border:2px solid black;
+
+  border-radius:8px;
+
+  padding:20px;
+}
+
+/* headings */
+
+.login-box h3{
+  margin-bottom:10px;
+  color:#1e3a8a;
+}
+
+/* inputs */
+
+.login-box input{
+  width:100%;
+  padding:10px;
+
+  border-radius:6px;
+  border:1px solid #777;
+
+  margin-bottom:10px;
+}
+
+/* buttons */
+
+.login-box button{
+  width:100%;
+  padding:10px;
+
+  background:#2563eb;
+
+  border:none;
+
+  color:white;
+
+  border-radius:6px;
+
+  cursor:pointer;
+}
+
+.login-box button:hover{
+  background:#1d4ed8;
+}
+
+/* =====================================
+   CHAT LAYOUT
+===================================== */
+
+.chat-container{
+  display:flex;
+  height:100vh;
+}
+
+/* =====================================
+   SIDEBAR
+===================================== */
+
+.sidebar{
+  width:260px;
+
+  background:#1e3a8a;
+
+  color:white;
+
+  padding:20px;
+
+  border-right:3px solid black;
+}
+
+.sidebar h3{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+/* =====================================
+   USER LIST BOX
+===================================== */
+
+.user-list{
+
+  border:2px solid black;
+
+  border-radius:8px;
+
+  padding:10px;
+
+  background:#3b82f6;
+}
+
+/* =====================================
+   EACH USER BOX
+===================================== */
+
+.user-item{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  border:2px solid black;
+
+  background:#2563eb;
+
+  padding:10px;
+
+  margin-bottom:8px;
+
+  border-radius:6px;
+
+  font-weight:500;
+}
+
+.user-item:hover{
+
+  background:#1d4ed8;
+
+  cursor:pointer;
+}
+
+/* user icon */
+
+.user-icon{
+  font-size:18px;
+}
+
+/* =====================================
+   CHAT AREA
+===================================== */
+
+.chat-area{
+  flex:1;
+
+  display:flex;
+
+  flex-direction:column;
+
+  background:#e0e7ff;
+}
+
+/* =====================================
+   CHAT HEADER
+===================================== */
+
+.chat-header{
+
+  background:#1e40af;
+
+  color:white;
+
+  padding:15px;
+
+  font-size:18px;
+
+  font-weight:bold;
+
+  border-bottom:3px solid black;
+}
+
+/* =====================================
+   MESSAGE LIST
+===================================== */
+
+.message-list{
+
+  flex:1;
+
+  overflow-y:auto;
+
+  padding:20px;
+
+  background:#eef2ff;
+}
+
+/* =====================================
+   MESSAGE STYLE
+===================================== */
+
+.message{
+  margin-bottom:12px;
+}
+
+.message-user{
+
+  font-weight:bold;
+
+  color:#1e3a8a;
+}
+
+.message-text{
+
+  background:white;
+
+  padding:10px 14px;
+
+  border-radius:8px;
+
+  display:inline-block;
+
+  border:1px solid #1e40af;
+
+  box-shadow:0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* =====================================
+   MESSAGE INPUT
+===================================== */
+
+.message-input{
+
+  display:flex;
+
+  padding:15px;
+
+  border-top:3px solid black;
+
+  background:#c7d2fe;
+}
+
+.message-input input{
+
+  flex:1;
+
+  padding:10px;
+
+  border-radius:6px;
+
+  border:1px solid #555;
+}
+
+.message-input button{
+
+  margin-left:10px;
+
+  background:#1e40af;
+
+  color:white;
+
+  border:none;
+
+  padding:10px 18px;
+
+  border-radius:6px;
+
+  cursor:pointer;
+}
+
+.message-input button:hover{
+
+  background:#1e3a8a;
+}
+
+/* =====================================
+   FETCH BUTTON
+===================================== */
+
+.fetch-btn{
+
+  background:#2563eb;
+
+  border:none;
+
+  color:white;
+
+  padding:8px 15px;
+
+  border-radius:6px;
+
+  margin:10px;
+
+  cursor:pointer;
+}
+
+.fetch-btn:hover{
+
+  background:#1d4ed8;
+}
